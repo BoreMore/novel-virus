@@ -1,0 +1,320 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #d7dadc;
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+}
+
+nav {
+    background-color: #1a1a1b !important;
+    color: #d7dadc !important;
+    width: 100%;
+}
+
+
+.close {
+    color: #d7dadc;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: tomato;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lineGraph {
+    background-color: #1a1a1b;
+    color: #d7dadc;
+}
+
+.data {
+    background-color: #1a1a1b;
+    border: 1px solid rgb(52, 53, 54);
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+}
+.data:not(.ppemission):not(.totalstats):not(.about) {
+    height: 605px;
+}
+
+
+.data.totalstats, .data.ppemission {
+    text-align: center;
+}
+.data.totalstats h1, .data.ppemission h1 {
+    font-size: 50px;
+    padding: 0;
+    vertical-align: middle;
+    margin: 0;
+}
+.data.totalstats div, .data.ppemission div {
+    padding: 0px;
+}
+.data.totalstats h6, .data.ppemission h6 {
+    font-size: 25px;
+    margin: 0;
+}
+.data.totalstats span, .data.ppemission span {
+    font-size: 40px;
+    font-weight: 700;
+}
+.data.ppemission p {
+    text-align: left;
+}
+
+.data h2 > small {
+    font-size: 16px;
+    float: right;    
+}
+
+.update small {
+    margin: 0;
+}
+
+.about h1 {
+    text-align: center;
+}
+.about h2 {
+    text-align: left;
+}
+
+.container-fluid > .row {
+    padding: 30px 15px;
+}
+
+td, tr {
+    background-color: #1a1a1b !important;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    border-bottom: 1px solid #d7dadc;
+}
+
+.progress {
+    width: 150px;
+}
+
+.dataTables_filter {
+    position: absolute;
+    right: 5px;
+    top: -25px;
+}
+
+#global tbody tr {
+    cursor: pointer;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    padding: 10px 10px;
+}
+
+.dataTables_filter label {
+    display: inline-flex;
+}
+
+.dataTables_filter input {
+    color: #d7dadc;
+    background: #1a1a1b;
+    border: 2px solid rgb(52, 53, 54);
+    border-radius: 2px;
+    height: 22px;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+
+.dataTables_filter input::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+.dataTables_filter input:-moz-placeholder {
+    font-style: italic;
+}
+
+.dataTables_filter input::-moz-placeholder {
+    font-style: italic;
+}
+
+.dataTables_filter input:-ms-input-placeholder {
+    font-style: italic;
+}
+
+tr th:nth-child(2), tr td:nth-child(2), .data.totalstats .totalconfirmedlarge span {
+    color: lightgreen;
+}
+
+tr th:nth-child(3), tr td:nth-child(3), .data.totalstats .totaldeathslarge span {
+    color: tomato;
+}
+
+tr th:nth-child(4), tr td:nth-child(4), .data.totalstats .totalseriouslarge span {
+    color: khaki;
+}
+
+tr th:nth-child(5), tr td:nth-child(5), .data.totalstats .totalrecoveredlarge span {
+    color: #659cef;
+}
+
+.dataTables_scrollBody::-webkit-scrollbar, #news .data::-webkit-scrollbar {
+    background-color: #d7dadc;
+    width: 10px;
+    height: 10px;
+}
+
+.dataTables_scrollBody::-webkit-scrollbar-track, #news .data::-webkit-scrollbar-track {
+    background-color: #1a1a1b;
+}
+
+.dataTables_scrollBody::-webkit-scrollbar-track:hover, #news .data::-webkit-scrollbar-track:hover {
+    background-color: #1a1a1b;
+}
+
+.dataTables_scrollBody::-webkit-scrollbar-thumb, #news .data::-webkit-scrollbar-thumb {
+    background-color: #d7dadc;
+    border-radius: 16px;
+    border: 2px solid #d7dadc;
+}
+.dataTables_scrollBody::-webkit-scrollbar-button, #news .data::-webkit-scrollbar-button {
+    display: none
+}
+
+.wrapper {
+    width: 250px;
+    display: inline-block;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #1a1a1b;
+    border: 2px solid #d7dadc;
+    padding: 3px;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.deadtext, .recoveredtext {
+    position: absolute;
+    font-weight: 600;
+    text-align: center;
+    font-size: 15px;
+    transform: translate(50%, 0%);
+}
+
+.progress-bar-fill {
+    height: 12px;
+    border-radius: 3px;
+    transition: width 500ms ease-in-out;
+    color: #d7dadc;
+}
+
+.recovered {
+    background-color: #659cef;
+}
+
+.dead {
+    background-color: tomato;
+}
+
+#news .data {
+    overflow-y: auto;
+}
+
+hr {
+    border-color: #d7dadc;
+}
+
+.about .row.justify-content-around {
+    text-align: center;
+}
+
+.about a {
+    color: #d7dadc;
+    text-decoration: none;
+}
+
+#news a, .sources a, .navbar-text a, .data.ppemission a {
+    color: #d7dadc;
+    text-decoration: underline;
+}
+
+#news a:visited, .sources a:visited, .navbar-text a:visited, .data.ppemission a:visited {
+    color: #659cef;
+}
+
+#news a:hover, .sources a:hover, .navbar-text a:hover, .data.ppemission a:hover {
+    color: #d7dadc;
+}
+
+#news a:active, .sources a:active, .navbar-text a:active, .data.ppemission a:active {
+    color: #659cef;
+}
+
+footer {
+    padding: 30px 15px !important;
+    background-color: #1a1a1b;
+}
+.donatefooter nav {
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 400px) {
+    .container-fluid>.row {
+        padding: 15px 2px;
+    }
+    .data {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .dataTables_filter input {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .wrapper {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .wrapper {
+        width: 75px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .dataTables_filter {
+        top: -33px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .data.totalstats div {
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .data.totalstats div {
+        padding: 15px;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .data.totalstats h6 {
+        font-size: 20px;
+    }
+    .data.totalstats span {
+        font-size: 33px;
+    }
+}
